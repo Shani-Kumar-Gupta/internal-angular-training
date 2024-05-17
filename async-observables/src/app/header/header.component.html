@@ -1,0 +1,5 @@
+<div class="headerComponent">
+  @for(headerItems of listItems; track headerItems.pathId) {
+    <p class="listItem" (click)="navigate(headerItems)">{{ headerItems.pathName }}</p>
+  }
+</div>

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "stock": "AAPL",
+    "currency": "EUR",
+    "amount": 103.50
+  },
+  {
+    "id": 1,
+    "stock": "MSFT",
+    "currency": "EUR",
+    "amount": 206.20
+  },
+  {
+    "id": 2,
+    "stock": "AMZN",
+    "currency": "GBP",
+    "amount": 2268.16
+  },
+  {
+    "id": 3,
+    "stock": "FB",
+    "currency": "GBP",
+    "amount": 233.71
+  },
+  {
+    "id": 4,
+    "stock": "GOOGL",
+    "currency": "USD",
+    "amount": 2393.57
+  },
+  {
+    "id": 5,
+    "stock": "BRK.B",
+    "currency": "USD",
+    "amount": 292.52
+  }
+]

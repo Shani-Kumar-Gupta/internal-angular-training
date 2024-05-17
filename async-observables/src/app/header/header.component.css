@@ -1,0 +1,21 @@
+.headerComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.listItem {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: lightseagreen;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.listItem:nth-child(even){
+  background-color: lightcoral;
+}

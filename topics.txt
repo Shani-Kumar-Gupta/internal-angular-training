@@ -1,0 +1,53 @@
+10th May:
+	- Observables
+	- Asynchronous Programming
+	- Data Streaming
+	- Promises Vs Observables
+
+: What is Async Programming and when to use it?
+: Application of Async Programming
+: Data Streaming
+: Different ways of handling the Async operations
+: Callback, Promises, Async and Await, 
+
+13th May:
+	- Observable Pattern
+	- Rxjs & It's Operator
+			Creation Operators
+				of
+				from
+				fromEvent (helps to create an observables from dom event)
+			Join Creation Operators
+				combineLatest
+				concat
+				forkJoin
+				merge
+			Transformation Operators
+				concatMap
+				exhaustMap
+				map
+				mergeMap
+				switchMap
+			
+			Convert Promise to an observable - (best way from)
+			pipe
+			filter
+			map
+	- Subjects in Rxjs
+	- Observables vs Subjects
+
+17th May:
+	- Behavior Subject
+	- Replay Subject
+	- Async Subject
+
+7th June:
+	- Reactive Forms
+	- Form Validations
+	- Showing validation error message
+	- Creating and using from Array
+	- Removing form controls dynamically
+	- Creating a custom validators
+	- Async validator
+	- ValueChanges and stateChanges event
+	- Retrieving form data and resetting form

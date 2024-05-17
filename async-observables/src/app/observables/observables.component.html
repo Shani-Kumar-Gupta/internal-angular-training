@@ -1,0 +1,28 @@
+<div class="observablesContainer">
+  <h2>Observables in Angular</h2>
+  @for(item of data; track item) {
+    <p class="itemData">{{ item }}</p>
+  }
+  <button class="ngBtn" (click)="getAsyncData()">Get Data</button>
+
+  @for(item of ofDataObservable; track item) {
+    <p class="itemData">{{ item }}</p>
+  }
+  <div class="promiseObservable">
+    <button class="btnCommon primary" (click)="createObservable()">Observable Creation</button>
+    <button class="btnCommon secondary" (click)="subscribeObservable()">Observable Subscription</button>
+    <button class="btnCommon cancel" (click)="destroyObservable()">Destroy Observable</button>
+  </div>
+</div>
+
+@for(item of fromDataObservable; track item) {
+  <p class="itemData">{{ item }}</p>
+}
+
+<div class="promiseObservable" style="margin-top: 10px;">
+  <button class="btnCommon primary" (click)="mergeMapFunc()">MergeMap Fn</button>
+  <button class="btnCommon secondary" (click)="concatMapFunc()">ConcatMap Fn</button>
+  <button class="btnCommon cancel" (click)="exhaustMapFunc()">ExhaustMap Fn</button>
+  <button class="btnCommon cancel" (click)="switchMapFunc()">SwitchMap Fn</button>
+  <button class="btnCommon cancel" (click)="forkJoinFunc()">ForkJoin Fn</button>
+</div>

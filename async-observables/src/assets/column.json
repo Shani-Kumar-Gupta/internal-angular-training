@@ -1,0 +1,20 @@
+[
+  {
+    "colId": "stock",
+    "field": "stock"
+  },
+  {
+    "colId": "currency",
+    "field": "currency"
+  },
+  {
+    "colId": "amount",
+    "field": "amount",
+    "type": "currencyColumn"
+  },
+  {
+    "colId": "report_price",
+    "field": "amount",
+    "type": ["currencyColumn", "reportColumn"]
+  }
+]

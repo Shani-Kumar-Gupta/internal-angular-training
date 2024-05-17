@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.agendaContainer {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: darkcyan;
+}
+
+.nestedList {
+  padding-left: 2rem;
+  /* font-size: rem; */
+}
+
+.ngBtn {
+  background-color: orangered;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.itemData {
+  color: white;
+  padding: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.itemData:nth-child(even) {
+  /* background-color: #153448; */
+  background-color: #FFC470;
+}
+
+.itemData:nth-child(odd) {
+  /* background-color: #1E0342; */
+  background-color: #DD5746;
+}
+
+.btnCommon {
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: blue;
+}
+
+.secondary {
+  background-color: green;
+}
+
+.cancel {
+  background-color: #DD5746;
+}
+
+.sharedContainer {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.box {
+  flex: 1; /* This makes the boxes take equal space */
+  padding: 10px; /* Optional: for spacing inside the boxes */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+.sharedContainer {
+  height: 100vh; /* Makes the container take the full height of the viewport */
+}
+
+.box:nth-child(1) {
+  background-color: lightblue;
+}
+
+.box:nth-child(2) {
+  background-color: lightgreen;
+}
+
+.todoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 0.5rem 1rem;
+}
+
+.itemBack {
+  background-color: gainsboro;
+  padding: 0.5rem 1rem;
+  margin-bottom: 10px;
+}

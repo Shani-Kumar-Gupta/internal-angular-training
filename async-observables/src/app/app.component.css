@@ -1,0 +1,35 @@
+.mainContainer {
+  width: 100%;
+  height: 100vh;
+  /* background-color: lightblue; */
+}
+
+.appTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  flex-direction: column;
+}
+
+.title {
+  background-image: url('https://images4.alphacoders.com/134/1341419.png');
+  /* background-image: url('https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg'); */
+  /* background-image: url('https://img.freepik.com/premium-photo/painting-river-with-mountain-background_787273-1241.jpg'); */
+  /* background-image: url('https://wallpapercave.com/wp/RQx6dbY.jpg'); */
+  /* background-image: url('https://wallpaperbat.com/img/916491-red-sunset-over-the-lake-windows-10-hd-wallpaper-p-wallpaper-hdwallpaper-desktop-landscape-wallpaper-red-sunset-wallpaper-windows-10.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* text-shadow: -2px -2px rgba(0,0,0,0.4); */
+}
+
+.routerOutlet {
+  margin: auto 2rem;
+  padding: 2rem;
+}
