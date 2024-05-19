@@ -70,6 +70,21 @@ export class HeaderComponent {
       pathId: 11,
       pathName: 'Shared Data b/w Component',
       pathURL: '/sharedData'
+    },
+    {
+      pathId: 12,
+      pathName: 'Behavior Subject',
+      pathURL: '/behaviorSubject'
+    },
+    {
+      pathId: 13,
+      pathName: 'Reply Subject',
+      pathURL: '/replySubject'
+    },
+    {
+      pathId: 14,
+      pathName: 'Async Subject',
+      pathURL: '/asyncSubject'
     }
   ];
   constructor(private route: Router) {}

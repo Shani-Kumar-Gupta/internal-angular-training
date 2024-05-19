@@ -9,6 +9,9 @@ import { PromiseObservableComponent } from './promise-observable/promise-observa
 import { SubjectComponent } from './subject/subject.component';
 import { ObservableSubjectComponent } from './observable-subject/observable-subject.component';
 import { SharedDataComponent } from './shared-data/shared-data.component';
+import { BehaviorSubjectComponent } from './behavior-subject/behavior-subject.component';
+import { ReplySubjectComponent } from './reply-subject/reply-subject.component';
+import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 
 export const routes: Routes = [
   {
@@ -60,5 +63,20 @@ export const routes: Routes = [
     path: 'sharedData',
     pathMatch: 'full',
     component: SharedDataComponent
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    component: BehaviorSubjectComponent
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    component: ReplySubjectComponent
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    component: AsyncSubjectComponent
   }
 ];
