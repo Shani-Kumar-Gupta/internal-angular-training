@@ -65,17 +65,17 @@ export const routes: Routes = [
     component: SharedDataComponent
   },
   {
-    path: '',
+    path: 'behaviorSubject',
     pathMatch: 'full',
     component: BehaviorSubjectComponent
   },
   {
-    path: '',
+    path: 'replaySubject',
     pathMatch: 'full',
     component: ReplySubjectComponent
   },
   {
-    path: '',
+    path: 'asyncSubject',
     pathMatch: 'full',
     component: AsyncSubjectComponent
   }

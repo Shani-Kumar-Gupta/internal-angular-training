@@ -78,8 +78,8 @@ export class HeaderComponent {
     },
     {
       pathId: 13,
-      pathName: 'Reply Subject',
-      pathURL: '/replySubject'
+      pathName: 'Replay Subject',
+      pathURL: '/replaySubject'
     },
     {
       pathId: 14,
