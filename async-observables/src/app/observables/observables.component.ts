@@ -120,7 +120,10 @@ export class ObservablesComponent implements OnInit, OnDestroy {
     });
 
     this.myfromSubscription = this.myfromObservable
-      .pipe(filter((data: any) => data % 2 === 0), map((val) => val * 2))
+      .pipe(
+        filter((data: any) => data % 2 === 0),
+        map((val) => val * 2)
+      )
       .subscribe({
         next: (val: any) => {
           this.fromDataObservable.push(val);
@@ -151,37 +154,85 @@ export class ObservablesComponent implements OnInit, OnDestroy {
   /* MergeMap, ConcatMap, ExhaustMap, SwitchMap and ForkJoin */
 
   mergeMapFunc() {
-    console.log("mergeMap");
-    this.myURLObservable.pipe(mergeMap((url) => this.getURLData(url))).subscribe((data) => {
-      console.log("mergeMap Data: ", data);
-    })
+    console.log('mergeMap');
+    this.myURLObservable
+      .pipe(mergeMap((url) => this.getURLData(url)))
+      .subscribe({
+        next: (data) => {
+          console.log('mergeMap Data: ', data);
+        },
+        error: (err) => {
+          console.log('mergeMap Error: ', err.message);
+        },
+        complete: () => {
+          console.log('mergeMap Complete');
+        },
+      });
   }
 
   concatMapFunc() {
-    console.log("concatMap");
-    this.myURLObservable.pipe(concatMap((url) => this.getURLData(url))).subscribe((data) => {
-      console.log("mergeMap Data: ", data);
-    })
+    console.log('concatMap');
+    this.myURLObservable
+      .pipe(concatMap((url) => this.getURLData(url)))
+      .subscribe({
+        next: (data) => {
+          console.log('concatMap Data: ', data);
+        },
+        error: (err) => {
+          console.log('concatMap Error: ', err.message);
+        },
+        complete: () => {
+          console.log('concatMap Complete');
+        },
+      });
   }
 
   exhaustMapFunc() {
-    console.log("exhaustMap");
-    this.myURLObservable.pipe(exhaustMap((url) => this.getURLData(url))).subscribe((data) => {
-      console.log("mergeMap Data: ", data);
-    })
+    console.log('exhaustMap');
+    this.myURLObservable
+      .pipe(exhaustMap((url) => this.getURLData(url)))
+      .subscribe({
+        next: (data) => {
+          console.log('exhaustMap Data: ', data);
+        },
+        error: (err) => {
+          console.log('exhaustMap Error: ', err.message);
+        },
+        complete: () => {
+          console.log('exhaustMap Complete');
+        },
+      });
   }
 
   switchMapFunc() {
-    console.log("exhaustMap");
-    this.myURLObservable.pipe(switchMap((url) => this.getURLData(url))).subscribe((data) => {
-      console.log("mergeMap Data: ", data);
-    })
+    console.log('switchMap');
+    this.myURLObservable
+      .pipe(switchMap((url) => this.getURLData(url)))
+      .subscribe({
+        next: (data) => {
+          console.log('switchMap Data: ', data);
+        },
+        error: (err) => {
+          console.log('switchMap Error: ', err.message);
+        },
+        complete: () => {
+          console.log('switchMap Complete');
+        },
+      });
   }
 
   forkJoinFunc() {
-    console.log("forkJoin");
-    forkJoin(this.urlArray.map((url) => this.getURLData(url))).subscribe((data) => {
-      console.log(data);
+    console.log('forkJoin');
+    forkJoin(this.urlArray.map((url) => this.getURLData(url))).subscribe({
+      next: (data) => {
+        console.log('forkJoin Data: ', data);
+      },
+      error: (err) => {
+        console.log('forkJoin Error: ', err.message);
+      },
+      complete: () => {
+        console.log('forkJoin Complete');
+      },
     });
   }
 }
